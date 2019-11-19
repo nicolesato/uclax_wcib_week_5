@@ -1,63 +1,61 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 1</title>
+  <title>Nicole Sato - Number Guessing Game</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UCLAx WCIB Week 5 Part 1 Assignment">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+  <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
 
-  <body class="text-center">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js" defer></script>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Week 5, Part 1</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-          </nav>
+</head>
+
+<body class="text-center">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <main role="main" class="inner cover">
+
+      <img src="images/menehune.png" alt="Menehune">
+
+      <h1 class="cover-heading">How many menehune are hiding under your bed?</h1>
+
+      <p>Eh, brah - a random number of <a href="https://en.wikipedia.org/wiki/Menehune" target="_blank"><span class="menehune-link">menehune</span></a> stay hidin' undah yo' bed. Ai yah! Wachu tink doze buggahs stay up to? Probably makin' plenny mischief o' wat...you betta figga out how many of doze babooze are runnin' around. Pick a numbah between 1 and 100. Try fo' guess how many menehune in max 10 turns. I'll let you know if your guess stay too much or too little. Eh, you betta hurry! I jus' saw one makin' one puka in yo' pillow.</p>
+
+      <div class="form">
+        <div class="form-group">
+          <label for="guessField">So, wat you tink?</label>
+          <input type="text" class="form-control guessField" id="guessField" aria-describedby="emailHelp" placeholder="Enter a guess">
         </div>
-      </header>
+        <input type="submit" value="Submit guess" class="btn btn-primary guessSubmit">
+      </div>
 
-      <main role="main" class="inner cover">
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
 
-        <h1 class="cover-heading">Number guessing game</h1>
+    </main>
 
-        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Cover template by <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> with design by <a href="https://www.instagram.com/nicoledaily.draws/" target="_blank">Nicole</a>.</p>
+      </div>
+    </footer>
+  </div>
 
-        <div class="form">
-          <div class="form-group">
-            <label for="guessField">Enter a guess:</label>
-            <input type="text" class="form-control guessField" id="guessField" aria-describedby="emailHelp" placeholder="Enter a guess">
-          </div>
-          <input type="submit" value="Submit guess" class="btn btn-primary guessSubmit">
-        </div>
-
-        <div class="resultParas">
-          <p class="guesses"></p>
-          <p class="lastResult"></p>
-          <p class="lowOrHi"></p>
-        </div>
-
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </footer>
-    </div>
-
-	</body>
+</body>
 
 </html>

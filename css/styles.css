@@ -1,6 +1,27 @@
 /*
  * Globals
  */
+body {
+  background-image: url("../images/hawaii_bg3.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  font-family: 'Cabin', sans-serif; }
+  body h1 {
+    font-family: 'Bungee', sans-serif;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem; }
+  body img {
+    width: 100px;
+    height: 140px; }
+  body .menehune-link {
+    color: #fffd38; }
+  body footer {
+    background-color: #153a65;
+    margin: 0;
+    padding-top: 1rem; }
+  body .guessSubmit {
+    margin-bottom: 1rem; }
+
 /* Links */
 a,
 a:focus,
@@ -82,4 +103,7 @@ body {
  * Footer
  */
 .mastfoot {
-  color: rgba(255, 255, 255, 0.5); }
+  color: white;
+  text-shadow: none; }
+  .mastfoot a {
+    color: #fffd38; }

@@ -1,6 +1,33 @@
 /*
- * Globals
- */
+* Globals
+*/
+$color1: rgba( 255, 253, 56, 1);
+$color2: rgba( 21, 58, 101, 1);
+
+body {
+  background-image: url("../images/hawaii_bg3.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  font-family: 'Cabin', sans-serif;
+  h1 {
+    font-family: 'Bungee', sans-serif;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+  }
+  img {
+    width: 100px;
+    height: 140px;
+  }
+  .menehune-link { color: $color1; }
+  footer {
+    background-color: $color2;
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .guessSubmit { margin-bottom: 1rem;}
+}
+
+
 
 /* Links */
 a,
@@ -21,8 +48,8 @@ a:hover {
 
 
 /*
- * Base structure
- */
+* Base structure
+*/
 
 html,
 body {
@@ -44,8 +71,8 @@ body {
 
 
 /*
- * Header
- */
+* Header
+*/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -87,8 +114,8 @@ body {
 
 
 /*
- * Cover
- */
+* Cover
+*/
 .cover {
   padding: 0 1.5rem;
 }
@@ -99,8 +126,10 @@ body {
 
 
 /*
- * Footer
- */
+* Footer
+*/
 .mastfoot {
-  color: rgba(255, 255, 255, .5);
+  color: white;
+  text-shadow: none;
+  a { color: $color1; }
 }
